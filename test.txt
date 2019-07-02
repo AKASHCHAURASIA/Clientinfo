@@ -1,8 +1,0 @@
-2019-06-17 -02:14:31 -|
-2019-06-17 -02:16:33 -|
-2019-06-17 -02:17:09 -|
-2019-06-17 -02:17:37 -|
-2019-06-17 -02:17:55 -|
-2019-06-17 -02:20:27 -|[object Object]
-2019-06-17 -02:38:07 -|[object Object]
-2019-06-17 -02:40:14 -|{"Acoountlogin":[],"ActiveXControl":{"Support":"ActiveX NOT Supported"},"Adblocker":{"Status":""},"Battery":{"Level":"","Charging":"","Time_r":""},"Browser":{"Name":"chrome","Version":"","Fullscreenmode":"","BrowsermimeType":[],"Plugins":[]},"ConnectionType":{"type":"3g","rtt":200,"downlonk":1.4},"Hardware":{"CPU":{"Arch":"","Core":4},"RAM":{"Value":8},"Network":{"Status":true,"Internet":""},"LocalSystime":"2019-06-16T21:10:14.082Z","Microphones":[{"Numberof":"","Permission":"","Label1":"","Label2":""}],"Speakers":[{"Numberof":"","Permission":"","Label1":"","Label2":""}],"Webcams":{"Status":""},"Graphics":{"Driver":""},"DiviceOrientation":{"Direction":"landscape-primary"},"Hostname":{"Name":""}},"ExternalScript":{"Webrtc":{},"Webgl":{"Version":"","Extension":""},"Websocket":{"Support":"","ActiveMachine":[]},"Canvas":{"Support":"canvas supported","Fingerprinting":""}}}
