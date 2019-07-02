@@ -1,0 +1,1134 @@
+<!-- page scripts -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from adminlte.io/blog/integrate-adminlte-with-laravel by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Jun 2019 16:48:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:admins" content="100001590293635"/>
+    <!-- Favicon -->
+    <link rel="icon" href="../img/favicon7839.png?v=1.2" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon7839.png?v=1.2" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../img/favicon7839.png?v=1.2">
+
+    <!-- social network metas -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Integrate AdminLTE with Laravel 5 | AdminLTE.IO"/>
+    <meta property="og:url" content="integrate-adminlte-with-laravel.html"/>
+    <meta property="image" content="../uploads/images/integrateAdminLTEwithLaravel.png"/>
+    <meta property="og:image" content="../uploads/images/integrateAdminLTEwithLaravel.png"/>
+    <meta property="site_name" content="Almsaeed Studio"/>
+    <meta property="description"
+          content="A simple tutorial for beginners that demonstrates how to integrate AdminLTE with Laravel 5."/>
+
+    <title>Integrate AdminLTE with Laravel 5 | AdminLTE.IO</title>
+
+    <link href="../css/themee67d.css?v=1.3" rel="stylesheet">
+
+    <link href="../bower_components/rrssb/css/rrssb.css" rel="stylesheet"/>
+<!-- Fonts --
+    <link href='//fonts.googleapis.com/css?family=Roboto:100,400,300,400italic,500' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,600" rel="stylesheet"-->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments);
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src   = g;
+            m.parentNode.insertBefore(a, m);
+        })(window, document, 'script', '../../www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-46680343-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+<body>
+
+<!-- Main Navigation Bar -->
+<nav class="navbar navbar-default navbar-static-top transparent" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-menu">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="../index.html"><span class="font-bold">Admin</span>LTE</a>
+        </div>
+        <!-- /.navbar-header -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="collapse-menu">
+            <ul class="nav navbar-nav navbar-right">
+                <li ><a href="../index.html">Home</a></li>
+                <li>
+                    <a href="../docs/2.4/installation.html">Docs</a>
+                </li>
+                <li >
+                    <a href="../premium.html">Premium Templates</a>
+                </li>
+                <li class="active">
+                    <a href="../blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="../index.html#subscribe">Subscribe</a>
+                </li>
+            </ul>
+            <!-- /.navbar-nav -->
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav><!--/.navbar-->
+
+
+<div id="main-content">
+        <div class="article-section section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+
+                    <article class="article-content" itemscope itemtype="http://schema.org/Blog">
+                        <meta itemprop="datePublished" content="2015-05-03T16:21:12-04:00"/>
+                        <meta itemprop="dateModified" content="2019-06-13T12:46:52-04:00"/>
+                        <meta itemscope
+                              itemprop="mainEntityOfPage"
+                              itemType="https://schema.org/WebPage"
+                              itemid="https://adminlte.io/blog/integrate-adminlte-with-laravel"/>
+                                                    <div class="article-img-container"
+                                 itemprop="image"
+                                 itemscope
+                                 itemtype="https://schema.org/ImageObject">
+                                <img class="img-responsive" src="../uploads/images/integrateAdminLTEwithLaravel.png" alt="Integrate AdminLTE with Laravel 5"/>
+                                <meta itemprop="url" content="https://adminlte.io/uploads/images/integrateAdminLTEwithLaravel.png">
+                                <meta itemprop="width" content="750">
+                                <meta itemprop="height" content="360">
+                            </div>
+                                                <h1 itemprop="headline">
+                            Integrate AdminLTE with Laravel 5
+                        </h1>
+
+                        <div class="article-date margin-top">
+                            <i class="fa fa-clock-o"></i>
+                            <time datetime="2015-05-03 16:21:12"
+                                  class="margin-r10">May 3, 2015</time>
+                            <i class="fa fa-user-o"></i> <span class="margin-r10">Aigars Silkalns</span>
+                            <i class="fa fa-circle-o"></i>
+                            <a href="category/General.html"
+                               class="link-dark"
+                               itemprop="author"
+                               itemscope
+                               itemtype="https://schema.org/Person">
+                                <span itemprop="name">General</span>
+                            </a>
+                        </div>
+
+                        <div class="article">
+                            <meta itemprop="description" content="A simple tutorial for beginners that demonstrates how to integrate AdminLTE with Laravel 5.">
+                            <p>
+                                AdminLTE is a great dashboard template but it is built with pure
+                                HTML and CSS. In this tutorial, I'd like to go through installing
+                                AdminLTE with Laravel 5 like pros. We will make sure the we have the
+                                ability to update AdminLTE to the latest version at any given time
+                                by using Bower to manage it.
+                            </p>
+
+                            <p>
+                                Looking for a good place to start with Laravel 5? <a href="https://laracasts.com/">Laracasts</a> provides a great
+                                set of video tutorials for programming with Laravel. In this tutorial, I will assume
+                                you went through the free <a href="https://laracasts.com/series/laravel-5-fundamentals">Laravel
+                                    5 Fundamentals</a> series or at least the first two videos.
+                                This tutorial requires basic knowledge of
+                                <a href="http://laravel.com/docs/5.0/homestead">Homestead</a> and the command line
+                                (<a href="http://www.bleepingcomputer.com/tutorials/windows-command-prompt-introduction/">DOS</a>
+                                or
+                                <a href="http://computers.tutsplus.com/tutorials/40-terminal-tips-and-tricks-you-never-thought-you-needed--mac-51192">Terminal</a>).
+                            </p>
+
+<div class='text-center'>
+</div>
+
+                            <h4><b>Tools We Will Use</b></h4>
+                            <ul>
+                                <li><a href="http://laravel.com/docs/5.0">Laravel 5</a></li>
+                                <li><a href="https://almsaeedstudio.com/">AdminLTE 2.0.5</a></li>
+                                <li><a href="http://laravel.com/docs/5.0/homestead">Homestead</a></li>
+                                <li><a href="http://bower.io/">Bower</a></li>
+                                <li><a href="https://getcomposer.org/">Composer</a></li>
+                            </ul>
+
+                            <h4><b>Install a Fresh Copy of Laravel</b></h4>
+
+                            <p>
+                                I will use <a href="http://laravel.com/docs/5.0">Laravel's installer</a> to create a new
+                                project. Feel free to do it
+                                any other way if you feel more comfortable with it.
+                            </p>
+
+                            <p>So let's get the laravel installer. In the terminal type this command</p>
+                            <pre class="prettyprint"><code class="bash">composer global require "laravel/installer=~1.1"</code></pre>
+
+                            <p>You may need to wait a few minutes until composer completes the installation.</p>
+
+                            <p>Then get a new copy of Laravel</p>
+                            <pre class="prettyprint"><code class="bash">laravel new myapp</code></pre>
+
+                            <p>
+                                With this command we created a new copy of Laravel and named it myapp.
+                                If this command didn't work, make sure you have the Laravel installer setup
+                                correctly on your machine.
+                            </p>
+
+                            <p>By now, you should be able to see the welcome page of Laravel when you visit the
+                                site.</p>
+                            <a href='../uploads/images/laravel-welcome-page.png'><img class="img-responsive" src="../uploads/images/laravel-welcome-page.png" alt="Laravel Welcome Page"/></a>
+
+                            <h4><b>Install AdminLTE via Bower</b></h4>
+
+                            <p>
+                                Navigate to the public directory within your laravel folder.
+                            </p>
+                            <pre class="prettyprint"><code class="bash">cd myapp/public</code></pre>
+                            <p>
+                                Within the directory, install AdminLTE via Bower
+                            </p>
+                            <pre class="prettyprint"><code class="bash">bower install admin-lte</code></pre>
+                            <p>Once it's done, you should have a folder called bower_componets and inside it you will
+                                find admin-lte.</p>
+
+                            <h4><b>Convert AdminLTE starter.html to Blade</b></h4>
+                            <p>Laravel provides a great templating system out of the box called <a href="http://laravel.com/docs/5.0/templates">Blade</a>.
+                            To take advantage of Blade, we need to convert the regular HTML of the starter page to Blade. First,
+                            create a new view in <code>resources/views</code> and call it <code>admin_template.blade.php</code>. Then, create
+                            a route to the new view.</p>
+
+                            <p>The route I am using is setup as follows</p>
+                            <pre class="prettyprint"><code class="lang-php">Route::get('admin', function () {
+    return view('admin_template');
+});</code></pre>
+
+                            <p>Now, copy the content of <code>bower_components/admin-lte/starter.html</code> to the new view and modify
+                            the asset links to point to the admin-lte directory. Here is my preliminary set up</p>
+<pre class="prettyprint control-height"><code class="lang-php">&LT;!DOCTYPE html>
+    &LT;!--
+    This is a starter template page. Use this page to start your new project from
+    scratch. This page gets rid of all links and provides the needed markup only.
+    -->
+    &LT;html>
+    &LT;head>
+        &LT;meta charset="UTF-8">
+        &LT;title>AdminLTE 2 | Dashboard&LT;/title>
+        &LT;meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+        &LT;!-- Bootstrap 3.3.2 -->
+        &LT;link href="&lbrace;&lbrace; asset("/bower_components/admin-lte/bootstrap/css/bootstrap.min.css") }}" rel="stylesheet" type="text/css" />
+        &LT;!-- Font Awesome Icons -->
+        &LT;link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        &LT;!-- Ionicons -->
+        &LT;link href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+        &LT;!-- Theme style -->
+        &LT;link href="&lbrace;&lbrace; asset("/bower_components/admin-lte/dist/css/AdminLTE.min.css")}}" rel="stylesheet" type="text/css" />
+        &LT;!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+              page. However, you can choose any other skin. Make sure you
+              apply the skin class to the body tag so the changes take effect.
+        -->
+        &LT;link href="&lbrace;&lbrace; asset("/bower_components/admin-lte/dist/css/skins/skin-blue.min.css")}}" rel="stylesheet" type="text/css" />
+
+        &LT;!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        &LT;!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        &LT;!--[if lt IE 9]>
+        &LT;script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">&LT;/script>
+        &LT;script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js">&LT;/script>
+        &LT;![endif]-->
+    &LT;/head>
+    &LT;body class="skin-blue">
+    &LT;div class="wrapper">
+
+        &LT;!-- Main Header -->
+        &LT;header class="main-header">
+
+            &LT;!-- Logo -->
+            &LT;a href="index2.html" class="logo">&LT;b>Admin&LT;/b>LTE&LT;/a>
+
+            &LT;!-- Header Navbar -->
+            &LT;nav class="navbar navbar-static-top" role="navigation">
+                &LT;!-- Sidebar toggle button-->
+                &LT;a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    &LT;span class="sr-only">Toggle navigation&LT;/span>
+                &LT;/a>
+                &LT;!-- Navbar Right Menu -->
+                &LT;div class="navbar-custom-menu">
+                    &LT;ul class="nav navbar-nav">
+                        &LT;!-- Messages: style can be found in dropdown.less-->
+                        &LT;li class="dropdown messages-menu">
+                            &LT;!-- Menu toggle button -->
+                            &LT;a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                &LT;i class="fa fa-envelope-o">&LT;/i>
+                                &LT;span class="label label-success">4&LT;/span>
+                            &LT;/a>
+                            &LT;ul class="dropdown-menu">
+                                &LT;li class="header">You have 4 messages&LT;/li>
+                                &LT;li>
+                                    &LT;!-- inner menu: contains the messages -->
+                                    &LT;ul class="menu">
+                                        &LT;li>&LT;!-- start message -->
+                                            &LT;a href="#">
+                                                &LT;div class="pull-left">
+                                                    &LT;!-- User Image -->
+                                                    &LT;img src="&lbrace;&lbrace; asset("/bower_components/admin-lte/dist/img/user2-160x160.jpg") }}" class="img-circle" alt="User Image"/>
+                                                &LT;/div>
+                                                &LT;!-- Message title and timestamp -->
+                                                &LT;h4>
+                                                    Support Team
+                                                    &LT;small>&LT;i class="fa fa-clock-o">&LT;/i> 5 mins&LT;/small>
+                                                &LT;/h4>
+                                                &LT;!-- The message -->
+                                                &LT;p>Why not buy a new awesome theme?&LT;/p>
+                                            &LT;/a>
+                                        &LT;/li>&LT;!-- end message -->
+                                    &LT;/ul>&LT;!-- /.menu -->
+                                &LT;/li>
+                                &LT;li class="footer">&LT;a href="#">See All Messages&LT;/a>&LT;/li>
+                            &LT;/ul>
+                        &LT;/li>&LT;!-- /.messages-menu -->
+
+                        &LT;!-- Notifications Menu -->
+                        &LT;li class="dropdown notifications-menu">
+                            &LT;!-- Menu toggle button -->
+                            &LT;a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                &LT;i class="fa fa-bell-o">&LT;/i>
+                                &LT;span class="label label-warning">10&LT;/span>
+                            &LT;/a>
+                            &LT;ul class="dropdown-menu">
+                                &LT;li class="header">You have 10 notifications&LT;/li>
+                                &LT;li>
+                                    &LT;!-- Inner Menu: contains the notifications -->
+                                    &LT;ul class="menu">
+                                        &LT;li>&LT;!-- start notification -->
+                                            &LT;a href="#">
+                                                &LT;i class="fa fa-users text-aqua">&LT;/i> 5 new members joined today
+                                            &LT;/a>
+                                        &LT;/li>&LT;!-- end notification -->
+                                    &LT;/ul>
+                                &LT;/li>
+                                &LT;li class="footer">&LT;a href="#">View all&LT;/a>&LT;/li>
+                            &LT;/ul>
+                        &LT;/li>
+                        &LT;!-- Tasks Menu -->
+                        &LT;li class="dropdown tasks-menu">
+                            &LT;!-- Menu Toggle Button -->
+                            &LT;a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                &LT;i class="fa fa-flag-o">&LT;/i>
+                                &LT;span class="label label-danger">9&LT;/span>
+                            &LT;/a>
+                            &LT;ul class="dropdown-menu">
+                                &LT;li class="header">You have 9 tasks&LT;/li>
+                                &LT;li>
+                                    &LT;!-- Inner menu: contains the tasks -->
+                                    &LT;ul class="menu">
+                                        &LT;li>&LT;!-- Task item -->
+                                            &LT;a href="#">
+                                                &LT;!-- Task title and progress text -->
+                                                &LT;h3>
+                                                    Design some buttons
+                                                    &LT;small class="pull-right">20%&LT;/small>
+                                                &LT;/h3>
+                                                &LT;!-- The progress bar -->
+                                                &LT;div class="progress xs">
+                                                    &LT;!-- Change the css width attribute to simulate progress -->
+                                                    &LT;div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                        &LT;span class="sr-only">20% Complete&LT;/span>
+                                                    &LT;/div>
+                                                &LT;/div>
+                                            &LT;/a>
+                                        &LT;/li>&LT;!-- end task item -->
+                                    &LT;/ul>
+                                &LT;/li>
+                                &LT;li class="footer">
+                                    &LT;a href="#">View all tasks&LT;/a>
+                                &LT;/li>
+                            &LT;/ul>
+                        &LT;/li>
+                        &LT;!-- User Account Menu -->
+                        &LT;li class="dropdown user user-menu">
+                            &LT;!-- Menu Toggle Button -->
+                            &LT;a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                &LT;!-- The user image in the navbar-->
+                                &LT;img src="&lbrace;&lbrace; asset("/bower_components/admin-lte/dist/img/user2-160x160.jpg") }}" class="user-image" alt="User Image"/>
+                                &LT;!-- hidden-xs hides the username on small devices so only the image appears. -->
+                                &LT;span class="hidden-xs">Alexander Pierce&LT;/span>
+                            &LT;/a>
+                            &LT;ul class="dropdown-menu">
+                                &LT;!-- The user image in the menu -->
+                                &LT;li class="user-header">
+                                    &LT;img src="&lbrace;&lbrace; asset("/bower_components/admin-lte/dist/img/user2-160x160.jpg") }}" class="img-circle" alt="User Image" />
+                                    &LT;p>
+                                        Alexander Pierce - Web Developer
+                                        &LT;small>Member since Nov. 2012&LT;/small>
+                                    &LT;/p>
+                                &LT;/li>
+                                &LT;!-- Menu Body -->
+                                &LT;li class="user-body">
+                                    &LT;div class="col-xs-4 text-center">
+                                        &LT;a href="#">Followers&LT;/a>
+                                    &LT;/div>
+                                    &LT;div class="col-xs-4 text-center">
+                                        &LT;a href="#">Sales&LT;/a>
+                                    &LT;/div>
+                                    &LT;div class="col-xs-4 text-center">
+                                        &LT;a href="#">Friends&LT;/a>
+                                    &LT;/div>
+                                &LT;/li>
+                                &LT;!-- Menu Footer-->
+                                &LT;li class="user-footer">
+                                    &LT;div class="pull-left">
+                                        &LT;a href="#" class="btn btn-default btn-flat">Profile&LT;/a>
+                                    &LT;/div>
+                                    &LT;div class="pull-right">
+                                        &LT;a href="#" class="btn btn-default btn-flat">Sign out&LT;/a>
+                                    &LT;/div>
+                                &LT;/li>
+                            &LT;/ul>
+                        &LT;/li>
+                    &LT;/ul>
+                &LT;/div>
+            &LT;/nav>
+        &LT;/header>
+        &LT;!-- Left side column. contains the logo and sidebar -->
+        &LT;aside class="main-sidebar">
+
+            &LT;!-- sidebar: style can be found in sidebar.less -->
+            &LT;section class="sidebar">
+
+                &LT;!-- Sidebar user panel (optional) -->
+                &LT;div class="user-panel">
+                    &LT;div class="pull-left image">
+                        &LT;img src="&lbrace;&lbrace; asset("/bower_components/admin-lte/dist/img/user2-160x160.jpg") }}" class="img-circle" alt="User Image" />
+                    &LT;/div>
+                    &LT;div class="pull-left info">
+                        &LT;p>Alexander Pierce&LT;/p>
+                        &LT;!-- Status -->
+                        &LT;a href="#">&LT;i class="fa fa-circle text-success">&LT;/i> Online&LT;/a>
+                    &LT;/div>
+                &LT;/div>
+
+                &LT;!-- search form (Optional) -->
+                &LT;form action="#" method="get" class="sidebar-form">
+                    &LT;div class="input-group">
+                        &LT;input type="text" name="q" class="form-control" placeholder="Search..."/>
+          &LT;span class="input-group-btn">
+            &LT;button type='submit' name='search' id='search-btn' class="btn btn-flat">&LT;i class="fa fa-search">&LT;/i>&LT;/button>
+          &LT;/span>
+                    &LT;/div>
+                &LT;/form>
+                &LT;!-- /.search form -->
+
+                &LT;!-- Sidebar Menu -->
+                &LT;ul class="sidebar-menu">
+                    &LT;li class="header">HEADER&LT;/li>
+                    &LT;!-- Optionally, you can add icons to the links -->
+                    &LT;li class="active">&LT;a href="#">&LT;span>Link&LT;/span>&LT;/a>&LT;/li>
+                    &LT;li>&LT;a href="#">&LT;span>Another Link&LT;/span>&LT;/a>&LT;/li>
+                    &LT;li class="treeview">
+                        &LT;a href="#">&LT;span>Multilevel&LT;/span> &LT;i class="fa fa-angle-left pull-right">&LT;/i>&LT;/a>
+                        &LT;ul class="treeview-menu">
+                            &LT;li>&LT;a href="#">Link in level 2&LT;/a>&LT;/li>
+                            &LT;li>&LT;a href="#">Link in level 2&LT;/a>&LT;/li>
+                        &LT;/ul>
+                    &LT;/li>
+                &LT;/ul>&LT;!-- /.sidebar-menu -->
+            &LT;/section>
+            &LT;!-- /.sidebar -->
+        &LT;/aside>
+
+        &LT;!-- Content Wrapper. Contains page content -->
+        &LT;div class="content-wrapper">
+            &LT;!-- Content Header (Page header) -->
+            &LT;section class="content-header">
+                &LT;h1>
+                    Page Header
+                    &LT;small>Optional description&LT;/small>
+                &LT;/h1>
+                &LT;ol class="breadcrumb">
+                    &LT;li>&LT;a href="#">&LT;i class="fa fa-dashboard">&LT;/i> Level&LT;/a>&LT;/li>
+                    &LT;li class="active">Here&LT;/li>
+                &LT;/ol>
+            &LT;/section>
+
+            &LT;!-- Main content -->
+            &LT;section class="content">
+
+                &LT;!-- Your Page Content Here -->
+
+            &LT;/section>&LT;!-- /.content -->
+        &LT;/div>&LT;!-- /.content-wrapper -->
+
+        &LT;!-- Main Footer -->
+        &LT;footer class="main-footer">
+            &LT;!-- To the right -->
+            &LT;div class="pull-right hidden-xs">
+                Anything you want
+            &LT;/div>
+            &LT;!-- Default to the left -->
+            &LT;strong>Copyright &copy; 2015 &LT;a href="#">Company&LT;/a>.&LT;/strong> All rights reserved.
+        &LT;/footer>
+
+    &LT;/div>&LT;!-- ./wrapper -->
+
+    &LT;!-- REQUIRED JS SCRIPTS -->
+
+    &LT;!-- jQuery 2.1.3 -->
+    &LT;script src="&lbrace;&lbrace; asset ("/bower_components/admin-lte/plugins/jQuery/jQuery-2.1.3.min.js") }}">&LT;/script>
+    &LT;!-- Bootstrap 3.3.2 JS -->
+    &LT;script src="&lbrace;&lbrace; asset ("/bower_components/admin-lte/bootstrap/js/bootstrap.min.js") }}" type="text/javascript">&LT;/script>
+    &LT;!-- AdminLTE App -->
+    &LT;script src="&lbrace;&lbrace; asset ("/bower_components/admin-lte/dist/js/app.min.js") }}" type="text/javascript">&LT;/script>
+
+    &LT;!-- Optionally, you can add Slimscroll and FastClick plugins.
+          Both of these plugins are recommended to enhance the
+          user experience -->
+    &LT;/body>
+&LT;/html></code></pre>
+                            <p>If you visit the page again, you should see the starter template working. The result should look
+                            like this</p>
+                            <a href='../uploads/images/starterTemplateForLaravel.png'><img class="img-responsive" src="../uploads/images/starterTemplateForLaravel.png" alt="Starter Template" /></a>
+
+                            <p>Now that we have all the resources we need to start with AdminLTE, lets add
+                            the final touches to our main view. I will split the template into three files,
+                                sidebar.blade.php, header.blade.php, and footer.blade.php. So create those files
+                                in the views directory, then add the necessary code in each file as follows.</p>
+
+                            <p><b>1. header.blade.php</b></p>
+<pre class="prettyprint"><code class="lang-html">&LT;!-- Main Header -->
+&LT;header class="main-header">
+
+    &LT;!-- Logo -->
+    &LT;a href="index2.html" class="logo">&LT;b>Admin&LT;/b>LTE&LT;/a>
+
+    &LT;!-- Header Navbar -->
+    &LT;nav class="navbar navbar-static-top" role="navigation">
+        &LT;!-- Sidebar toggle button-->
+        &LT;a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            &LT;span class="sr-only">Toggle navigation&LT;/span>
+        &LT;/a>
+        &LT;!-- Navbar Right Menu -->
+        &LT;div class="navbar-custom-menu">
+            &LT;ul class="nav navbar-nav">
+                &LT;!-- Messages: style can be found in dropdown.less-->
+                &LT;li class="dropdown messages-menu">
+                    &LT;!-- Menu toggle button -->
+                    &LT;a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        &LT;i class="fa fa-envelope-o">&LT;/i>
+                        &LT;span class="label label-success">4&LT;/span>
+                    &LT;/a>
+                    &LT;ul class="dropdown-menu">
+                        &LT;li class="header">You have 4 messages&LT;/li>
+                        &LT;li>
+                            &LT;!-- inner menu: contains the messages -->
+                            &LT;ul class="menu">
+                                &LT;li>&LT;!-- start message -->
+                                    &LT;a href="#">
+                                        &LT;div class="pull-left">
+                                            &LT;!-- User Image -->
+                                            &LT;img src="&lbrace;&lbrace; asset("/bower_components/admin-lte/dist/img/user2-160x160.jpg") }}" class="img-circle" alt="User Image"/>
+                                        &LT;/div>
+                                        &LT;!-- Message title and timestamp -->
+                                        &LT;h4>
+                                            Support Team
+                                            &LT;small>&LT;i class="fa fa-clock-o">&LT;/i> 5 mins&LT;/small>
+                                        &LT;/h4>
+                                        &LT;!-- The message -->
+                                        &LT;p>Why not buy a new awesome theme?&LT;/p>
+                                    &LT;/a>
+                                &LT;/li>&LT;!-- end message -->
+                            &LT;/ul>&LT;!-- /.menu -->
+                        &LT;/li>
+                        &LT;li class="footer">&LT;a href="#">See All Messages&LT;/a>&LT;/li>
+                    &LT;/ul>
+                &LT;/li>&LT;!-- /.messages-menu -->
+
+                &LT;!-- Notifications Menu -->
+                &LT;li class="dropdown notifications-menu">
+                    &LT;!-- Menu toggle button -->
+                    &LT;a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        &LT;i class="fa fa-bell-o">&LT;/i>
+                        &LT;span class="label label-warning">10&LT;/span>
+                    &LT;/a>
+                    &LT;ul class="dropdown-menu">
+                        &LT;li class="header">You have 10 notifications&LT;/li>
+                        &LT;li>
+                            &LT;!-- Inner Menu: contains the notifications -->
+                            &LT;ul class="menu">
+                                &LT;li>&LT;!-- start notification -->
+                                    &LT;a href="#">
+                                        &LT;i class="fa fa-users text-aqua">&LT;/i> 5 new members joined today
+                                    &LT;/a>
+                                &LT;/li>&LT;!-- end notification -->
+                            &LT;/ul>
+                        &LT;/li>
+                        &LT;li class="footer">&LT;a href="#">View all&LT;/a>&LT;/li>
+                    &LT;/ul>
+                &LT;/li>
+                &LT;!-- Tasks Menu -->
+                &LT;li class="dropdown tasks-menu">
+                    &LT;!-- Menu Toggle Button -->
+                    &LT;a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        &LT;i class="fa fa-flag-o">&LT;/i>
+                        &LT;span class="label label-danger">9&LT;/span>
+                    &LT;/a>
+                    &LT;ul class="dropdown-menu">
+                        &LT;li class="header">You have 9 tasks&LT;/li>
+                        &LT;li>
+                            &LT;!-- Inner menu: contains the tasks -->
+                            &LT;ul class="menu">
+                                &LT;li>&LT;!-- Task item -->
+                                    &LT;a href="#">
+                                        &LT;!-- Task title and progress text -->
+                                        &LT;h3>
+                                            Design some buttons
+                                            &LT;small class="pull-right">20%&LT;/small>
+                                        &LT;/h3>
+                                        &LT;!-- The progress bar -->
+                                        &LT;div class="progress xs">
+                                            &LT;!-- Change the css width attribute to simulate progress -->
+                                            &LT;div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                &LT;span class="sr-only">20% Complete&LT;/span>
+                                            &LT;/div>
+                                        &LT;/div>
+                                    &LT;/a>
+                                &LT;/li>&LT;!-- end task item -->
+                            &LT;/ul>
+                        &LT;/li>
+                        &LT;li class="footer">
+                            &LT;a href="#">View all tasks&LT;/a>
+                        &LT;/li>
+                    &LT;/ul>
+                &LT;/li>
+                &LT;!-- User Account Menu -->
+                &LT;li class="dropdown user user-menu">
+                    &LT;!-- Menu Toggle Button -->
+                    &LT;a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        &LT;!-- The user image in the navbar-->
+                        &LT;img src="&lbrace;&lbrace; asset("/bower_components/admin-lte/dist/img/user2-160x160.jpg") }}" class="user-image" alt="User Image"/>
+                        &LT;!-- hidden-xs hides the username on small devices so only the image appears. -->
+                        &LT;span class="hidden-xs">Alexander Pierce&LT;/span>
+                    &LT;/a>
+                    &LT;ul class="dropdown-menu">
+                        &LT;!-- The user image in the menu -->
+                        &LT;li class="user-header">
+                            &LT;img src="&lbrace;&lbrace; asset("/bower_components/admin-lte/dist/img/user2-160x160.jpg") }}" class="img-circle" alt="User Image" />
+                            &LT;p>
+                                Alexander Pierce - Web Developer
+                                &LT;small>Member since Nov. 2012&LT;/small>
+                            &LT;/p>
+                        &LT;/li>
+                        &LT;!-- Menu Body -->
+                        &LT;li class="user-body">
+                            &LT;div class="col-xs-4 text-center">
+                                &LT;a href="#">Followers&LT;/a>
+                            &LT;/div>
+                            &LT;div class="col-xs-4 text-center">
+                                &LT;a href="#">Sales&LT;/a>
+                            &LT;/div>
+                            &LT;div class="col-xs-4 text-center">
+                                &LT;a href="#">Friends&LT;/a>
+                            &LT;/div>
+                        &LT;/li>
+                        &LT;!-- Menu Footer-->
+                        &LT;li class="user-footer">
+                            &LT;div class="pull-left">
+                                &LT;a href="#" class="btn btn-default btn-flat">Profile&LT;/a>
+                            &LT;/div>
+                            &LT;div class="pull-right">
+                                &LT;a href="#" class="btn btn-default btn-flat">Sign out&LT;/a>
+                            &LT;/div>
+                        &LT;/li>
+                    &LT;/ul>
+                &LT;/li>
+            &LT;/ul>
+        &LT;/div>
+    &LT;/nav>
+&LT;/header></code></pre>
+                            <p><b>2. sidebar.blade.php</b></p>
+<pre class="prettyprint"><code class="lang-html">&LT;!-- Left side column. contains the sidebar -->
+&LT;aside class="main-sidebar">
+
+    &LT;!-- sidebar: style can be found in sidebar.less -->
+    &LT;section class="sidebar">
+
+        &LT;!-- Sidebar user panel (optional) -->
+        &LT;div class="user-panel">
+            &LT;div class="pull-left image">
+                &LT;img src="&lbrace;&lbrace; asset("/bower_components/admin-lte/dist/img/user2-160x160.jpg") }}" class="img-circle" alt="User Image" />
+            &LT;/div>
+            &LT;div class="pull-left info">
+                &LT;p>Alexander Pierce&LT;/p>
+                &LT;!-- Status -->
+                &LT;a href="#">&LT;i class="fa fa-circle text-success">&LT;/i> Online&LT;/a>
+            &LT;/div>
+        &LT;/div>
+
+        &LT;!-- search form (Optional) -->
+        &LT;form action="#" method="get" class="sidebar-form">
+            &LT;div class="input-group">
+                &LT;input type="text" name="q" class="form-control" placeholder="Search..."/>
+&LT;span class="input-group-btn">
+  &LT;button type='submit' name='search' id='search-btn' class="btn btn-flat">&LT;i class="fa fa-search">&LT;/i>&LT;/button>
+&LT;/span>
+            &LT;/div>
+        &LT;/form>
+        &LT;!-- /.search form -->
+
+        &LT;!-- Sidebar Menu -->
+        &LT;ul class="sidebar-menu">
+            &LT;li class="header">HEADER&LT;/li>
+            &LT;!-- Optionally, you can add icons to the links -->
+            &LT;li class="active">&LT;a href="#">&LT;span>Link&LT;/span>&LT;/a>&LT;/li>
+            &LT;li>&LT;a href="#">&LT;span>Another Link&LT;/span>&LT;/a>&LT;/li>
+            &LT;li class="treeview">
+                &LT;a href="#">&LT;span>Multilevel&LT;/span> &LT;i class="fa fa-angle-left pull-right">&LT;/i>&LT;/a>
+                &LT;ul class="treeview-menu">
+                    &LT;li>&LT;a href="#">Link in level 2&LT;/a>&LT;/li>
+                    &LT;li>&LT;a href="#">Link in level 2&LT;/a>&LT;/li>
+                &LT;/ul>
+            &LT;/li>
+        &LT;/ul>&LT;!-- /.sidebar-menu -->
+    &LT;/section>
+    &LT;!-- /.sidebar -->
+&LT;/aside></code></pre>
+
+                            <p><b>3. footer.blade.php</b></p>
+
+<pre class="prettyprint"><code class="lang-html"><!-- Main Footer -->
+&LT;footer class="main-footer">
+    &LT;!-- To the right -->
+    &LT;div class="pull-right hidden-xs">
+        Anything you want
+    &LT;/div>
+    &LT;!-- Default to the left -->
+    &LT;strong>Copyright &copy; 2015 &LT;a href="#">Company&LT;/a>.&LT;/strong> All rights reserved.
+&LT;/footer></code></pre>
+
+                            <h4><b>Final Touches</b></h4>
+                            <p>We have the pieces of the template split for easy customization. Now we
+                            need to customize our original <code>admin_template.blade.php</code> to load those
+                            files and allow for dynamic content loading. Here is my final code for admin_template.blade.php</p>
+<pre class="prettyprint"><code class="lang-html">&LT;!DOCTYPE html>
+&LT;!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+&LT;html>
+&LT;head>
+    &LT;meta charset="UTF-8">
+    &LT;title>&lbrace;&lbrace; $page_title or "AdminLTE Dashboard" }}&LT;/title>
+    &LT;meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    &LT;!-- Bootstrap 3.3.2 -->
+    &LT;link href="&lbrace;&lbrace; asset("/bower_components/admin-lte/bootstrap/css/bootstrap.min.css") }}" rel="stylesheet" type="text/css" />
+    &LT;!-- Font Awesome Icons -->
+    &LT;link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    &LT;!-- Ionicons -->
+    &LT;link href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    &LT;!-- Theme style -->
+    &LT;link href="&lbrace;&lbrace; asset("/bower_components/admin-lte/dist/css/AdminLTE.min.css")}}" rel="stylesheet" type="text/css" />
+    &LT;!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+          page. However, you can choose any other skin. Make sure you
+          apply the skin class to the body tag so the changes take effect.
+    -->
+    &LT;link href="&lbrace;&lbrace; asset("/bower_components/admin-lte/dist/css/skins/skin-blue.min.css")}}" rel="stylesheet" type="text/css" />
+
+    &LT;!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    &LT;!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    &LT;!--[if lt IE 9]>
+    &LT;script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">&LT;/script>
+    &LT;script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js">&LT;/script>
+    &LT;![endif]-->
+&LT;/head>
+&LT;body class="skin-blue">
+&LT;div class="wrapper">
+
+    &LT;!-- Header -->
+    &#64include('header')
+
+    &LT;!-- Sidebar -->
+    &#64include('sidebar')
+
+    &LT;!-- Content Wrapper. Contains page content -->
+    &LT;div class="content-wrapper">
+        &LT;!-- Content Header (Page header) -->
+        &LT;section class="content-header">
+            &LT;h1>
+                &lbrace;&lbrace; $page_title or "Page Title" }}
+                &LT;small>&lbrace;&lbrace; $page_description or null }}&LT;/small>
+            &LT;/h1>
+            &LT;!-- You can dynamically generate breadcrumbs here -->
+            &LT;ol class="breadcrumb">
+                &LT;li>&LT;a href="#">&LT;i class="fa fa-dashboard">&LT;/i> Level&LT;/a>&LT;/li>
+                &LT;li class="active">Here&LT;/li>
+            &LT;/ol>
+        &LT;/section>
+
+        &LT;!-- Main content -->
+        &LT;section class="content">
+            &LT;!-- Your Page Content Here -->
+            &#64yield('content')
+        &LT;/section>&LT;!-- /.content -->
+    &LT;/div>&LT;!-- /.content-wrapper -->
+
+    &LT;!-- Footer -->
+    &#64include('footer')
+
+&LT;/div>&LT;!-- ./wrapper -->
+
+&LT;!-- REQUIRED JS SCRIPTS -->
+
+&LT;!-- jQuery 2.1.3 -->
+&LT;script src="&lbrace;&lbrace; asset ("/bower_components/admin-lte/plugins/jQuery/jQuery-2.1.3.min.js") }}">&LT;/script>
+&LT;!-- Bootstrap 3.3.2 JS -->
+&LT;script src="&lbrace;&lbrace; asset ("/bower_components/admin-lte/bootstrap/js/bootstrap.min.js") }}" type="text/javascript">&LT;/script>
+&LT;!-- AdminLTE App -->
+&LT;script src="&lbrace;&lbrace; asset ("/bower_components/admin-lte/dist/js/app.min.js") }}" type="text/javascript">&LT;/script>
+
+&LT;!-- Optionally, you can add Slimscroll and FastClick plugins.
+      Both of these plugins are recommended to enhance the
+      user experience -->
+&LT;/body>
+&LT;/html></code></pre>
+                            <p>In the code above, we added a section called <code>content</code> that will contain our pages,
+                            loaded the header, footer, and sidebar, and added <code>$page_title</code> variable to give our pages
+                            titles. The template is now ready to be used with Laravel 5.</p>
+
+                            <h4><b>Test Page</b></h4>
+                            <p>To demonstrate where to go from there, I will create a simple page that shows
+                                a box with progress bars containing dynamically generated tasks.</p>
+                            <p><b>1. Create test.blade.php.</b> Within the views folder, create a new file and add the following code to it.</p>
+<pre class="prettyprint"><code class="lang-html">&#64extends('admin_template')
+
+&#64section('content')
+    &LT;div class='row'>
+        &LT;div class='col-md-6'>
+            &LT;!-- Box -->
+            &LT;div class="box box-primary">
+                &LT;div class="box-header with-border">
+                    &LT;h3 class="box-title">Randomly Generated Tasks&LT;/h3>
+                    &LT;div class="box-tools pull-right">
+                        &LT;button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">&LT;i class="fa fa-minus">&LT;/i>&LT;/button>
+                        &LT;button class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">&LT;i class="fa fa-times">&LT;/i>&LT;/button>
+                    &LT;/div>
+                &LT;/div>
+                &LT;div class="box-body">
+                    &#64foreach($tasks as $task)
+                        &LT;h5>
+                            &lbrace;&lbrace; $task['name'] }}
+                            &LT;small class="label label-&lbrace;&lbrace;$task['color']}} pull-right">&lbrace;&lbrace;$task['progress']}}%&LT;/small>
+                        &LT;/h5>
+                        &LT;div class="progress progress-xxs">
+                            &LT;div class="progress-bar progress-bar-&lbrace;&lbrace;$task['color']}}" style="width: &lbrace;&lbrace;$task['progress']}}%">&LT;/div>
+                        &LT;/div>
+                    &#64endforeach
+
+                &LT;/div>&LT;!-- /.box-body -->
+                &LT;div class="box-footer">
+                    &LT;form action='#'>
+                        &LT;input type='text' placeholder='New task' class='form-control input-sm' />
+                    &LT;/form>
+                &LT;/div>&LT;!-- /.box-footer-->
+            &LT;/div>&LT;!-- /.box -->
+        &LT;/div>&LT;!-- /.col -->
+        &LT;div class='col-md-6'>
+            &LT;!-- Box -->
+            &LT;div class="box box-primary">
+                &LT;div class="box-header with-border">
+                    &LT;h3 class="box-title">Second Box&LT;/h3>
+                    &LT;div class="box-tools pull-right">
+                        &LT;button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">&LT;i class="fa fa-minus">&LT;/i>&LT;/button>
+                        &LT;button class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">&LT;i class="fa fa-times">&LT;/i>&LT;/button>
+                    &LT;/div>
+                &LT;/div>
+                &LT;div class="box-body">
+                    A separate section to add any kind of widget. Feel free
+                    to explore all of AdminLTE widgets by visiting the demo page
+                    on &LT;a href="https://almsaeedstudio.com">Almsaeed Studio&LT;/a>.
+                &LT;/div>&LT;!-- /.box-body -->
+            &LT;/div>&LT;!-- /.box -->
+        &LT;/div>&LT;!-- /.col -->
+
+    &LT;/div>&LT;!-- /.row -->
+&#64endsection</code></pre>
+
+                            <p><b>2. Create Controller TestControler.php.</b> Create a new controller by using the following
+                            command</p>
+                            <pre class="prettyprint"><code class="lang-bash">php artisan make:controller TestController --plain</code></pre>
+                            <p>The code for the new controller</p>
+<pre class="prettyprint"><code class="lang-php">&LT;?php namespace App\Http\Controllers;
+
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
+
+use Illuminate\Http\Request;
+
+class TestController extends Controller {
+
+    public function index() {
+        $data['tasks'] = [
+                [
+                        'name' => 'Design New Dashboard',
+                        'progress' => '87',
+                        'color' => 'danger'
+                ],
+                [
+                        'name' => 'Create Home Page',
+                        'progress' => '76',
+                        'color' => 'warning'
+                ],
+                [
+                        'name' => 'Some Other Task',
+                        'progress' => '32',
+                        'color' => 'success'
+                ],
+                [
+                        'name' => 'Start Building Website',
+                        'progress' => '56',
+                        'color' => 'info'
+                ],
+                [
+                        'name' => 'Develop an Awesome Algorithm',
+                        'progress' => '10',
+                        'color' => 'success'
+                ]
+        ];
+        return view('test')->with($data);
+    }
+
+}
+</code></pre>
+
+                            <p><b>3. Create a Route.</b> Now that we have a controller, we need a new route to
+                                point to it. Within the routes.php file, copy the following route:</p>
+                            <pre class="prettyprint"><code class="lang-php">Route::get('test', 'TestController@index');</code></pre>
+
+                            <p>If everything has been done correctly, you should be able to see result similar to this when visiting the test page.</p>
+                            <a href='../uploads/images/AdminLTETestPage.png'><img class="img-responsive" src="../uploads/images/AdminLTETestPage.png" alt="AdminLTE Test Page" /></a>
+
+                            <h4><b>Download & Conclusion</b></h4>
+
+                            <p><b>Download:</b> <small><a href='../uploads/files/AdminLTE-and-Laravel.zip'>AdminLTE-and-Laravel.zip</a></small></p>
+                            <p>I hope you enjoyed this tutorial. Do not hesitate to comment or ask questions below.</p>
+
+                        </div>
+
+                        <div class="article-social-buttons">
+                            <!-- Buttons start here. Copy this ul to your document. -->
+<ul class="rrssb-buttons clearfix">
+    <li class="rrssb-facebook">
+        <!--  Replace with your URL. For best results, make sure you page has the proper FB Open Graph tags in header:
+              https://developers.facebook.com/docs/opengraph/howtos/maximizing-distribution-media-content/ -->
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://adminlte.io/blog/integrate-adminlte-with-laravel" class="popup">
+            <span class="rrssb-icon">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     preserveAspectRatio="xMidYMid"
+                     width="29"
+                     height="29"
+                     viewBox="0 0 29 29">
+                    <path d="M26.4 0H2.6C1.714 0 0 1.715 0 2.6v23.8c0 .884 1.715 2.6 2.6 2.6h12.393V17.988h-3.996v-3.98h3.997v-3.062c0-3.746 2.835-5.97 6.177-5.97 1.6 0 2.444.173 2.845.226v3.792H21.18c-1.817 0-2.156.9-2.156 2.168v2.847h5.045l-.66 3.978h-4.386V29H26.4c.884 0 2.6-1.716 2.6-2.6V2.6c0-.885-1.716-2.6-2.6-2.6z"
+                          class="cls-2" fill-rule="evenodd"/>
+                </svg>
+            </span>
+            <span class="rrssb-text">facebook</span>
+        </a>
+    </li>
+
+    <li class="rrssb-linkedin">
+        <!-- Replace href with your meta and URL information -->
+        <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://adminlte.io/blog/integrate-adminlte-with-laravel" class="popup">
+            <span class="rrssb-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                    <path d="M25.424 15.887v8.447h-4.896v-7.882c0-1.98-.71-3.33-2.48-3.33-1.354 0-2.158.91-2.514 1.802-.13.315-.162.753-.162 1.194v8.216h-4.9s.067-13.35 0-14.73h4.9v2.087c-.01.017-.023.033-.033.05h.032v-.05c.65-1.002 1.812-2.435 4.414-2.435 3.222 0 5.638 2.106 5.638 6.632zM5.348 2.5c-1.676 0-2.772 1.093-2.772 2.54 0 1.42 1.066 2.538 2.717 2.546h.032c1.71 0 2.77-1.132 2.77-2.546C8.056 3.593 7.02 2.5 5.344 2.5h.005zm-2.48 21.834h4.896V9.604H2.867v14.73z"
+                    />
+                </svg>
+            </span>
+            <span class="rrssb-text">linkedin</span>
+        </a>
+    </li>
+    <li class="rrssb-twitter">
+        <!-- Replace href with your Meta and URL information  -->
+        <a href="http://twitter.com/home?status=A%20simple%20tutorial%20for%20beginners%20that%20demonstrates%20how%20to%20integrate%20AdminLTE%20with%20Laravel%205.%20https://adminlte.io/blog/integrate-adminlte-with-laravel%20%23AdminLTE"
+           class="popup">
+            <span class="rrssb-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                    <path d="M24.253 8.756C24.69 17.08 18.297 24.182 9.97 24.62c-3.122.162-6.22-.646-8.86-2.32 2.702.18 5.375-.648 7.507-2.32-2.072-.248-3.818-1.662-4.49-3.64.802.13 1.62.077 2.4-.154-2.482-.466-4.312-2.586-4.412-5.11.688.276 1.426.408 2.168.387-2.135-1.65-2.73-4.62-1.394-6.965C5.574 7.816 9.54 9.84 13.802 10.07c-.842-2.738.694-5.64 3.434-6.48 2.018-.624 4.212.043 5.546 1.682 1.186-.213 2.318-.662 3.33-1.317-.386 1.256-1.248 2.312-2.4 2.942 1.048-.106 2.07-.394 3.02-.85-.458 1.182-1.343 2.15-2.48 2.71z"
+                    />
+                </svg>
+            </span>
+            <span class="rrssb-text">twitter</span>
+        </a>
+    </li>
+
+    <li class="rrssb-googleplus">
+        <!-- Replace href with your meta and URL information.  -->
+        <a href="https://plus.google.com/share?url=A%20simple%20tutorial%20for%20beginners%20that%20demonstrates%20how%20to%20integrate%20AdminLTE%20with%20Laravel%205.%20https://adminlte.io/blog/integrate-adminlte-with-laravel" class="popup">
+            <span class="rrssb-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                    <path d="M14.703 15.854l-1.22-.948c-.37-.308-.88-.715-.88-1.46 0-.747.51-1.222.95-1.662 1.42-1.12 2.84-2.31 2.84-4.817 0-2.58-1.62-3.937-2.4-4.58h2.098l2.203-1.384h-6.67c-1.83 0-4.467.433-6.398 2.027C3.768 4.287 3.06 6.018 3.06 7.576c0 2.634 2.02 5.328 5.603 5.328.34 0 .71-.033 1.083-.068-.167.408-.336.748-.336 1.324 0 1.04.55 1.685 1.01 2.297-1.523.104-4.37.273-6.466 1.562-1.998 1.187-2.605 2.915-2.605 4.136 0 2.512 2.357 4.84 7.288 4.84 5.822 0 8.904-3.223 8.904-6.41.008-2.327-1.36-3.49-2.83-4.73h-.01zM10.27 11.95c-2.913 0-4.232-3.764-4.232-6.036 0-.884.168-1.797.744-2.51.543-.68 1.49-1.12 2.372-1.12 2.807 0 4.256 3.797 4.256 6.24 0 .613-.067 1.695-.845 2.48-.537.55-1.438.947-2.295.95v-.003zm.032 13.66c-3.62 0-5.957-1.733-5.957-4.143 0-2.408 2.165-3.223 2.91-3.492 1.422-.48 3.25-.545 3.556-.545.34 0 .52 0 .767.034 2.574 1.838 3.706 2.757 3.706 4.48-.002 2.072-1.736 3.664-4.982 3.648l.002.017zM23.254 11.89V8.52H21.57v3.37H18.2v1.714h3.367v3.4h1.684v-3.4h3.4V11.89"
+                    />
+                </svg>
+            </span>
+            <span class="rrssb-text">google+</span>
+        </a>
+    </li>
+    <li class="rrssb-pinterest">
+        <!-- Replace href with your meta and URL information.  -->
+        <a class="popup"
+           href="http://pinterest.com/pin/create/button/?url=https://adminlte.io/blog/integrate-adminlte-with-laravel&amp;media=https://adminlte.io/uploads/images/integrateAdminLTEwithLaravel.png&amp;description=A%20simple%20tutorial%20for%20beginners%20that%20demonstrates%20how%20to%20integrate%20AdminLTE%20with%20Laravel%205.">
+            <span class="rrssb-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                    <path d="M14.02 1.57c-7.06 0-12.784 5.723-12.784 12.785S6.96 27.14 14.02 27.14c7.062 0 12.786-5.725 12.786-12.785 0-7.06-5.724-12.785-12.785-12.785zm1.24 17.085c-1.16-.09-1.648-.666-2.558-1.22-.5 2.627-1.113 5.146-2.925 6.46-.56-3.972.822-6.952 1.462-10.117-1.094-1.84.13-5.545 2.437-4.632 2.837 1.123-2.458 6.842 1.1 7.557 3.71.744 5.226-6.44 2.924-8.775-3.324-3.374-9.677-.077-8.896 4.754.19 1.178 1.408 1.538.49 3.168-2.13-.472-2.764-2.15-2.683-4.388.132-3.662 3.292-6.227 6.46-6.582 4.008-.448 7.772 1.474 8.29 5.24.58 4.254-1.815 8.864-6.1 8.532v.003z"
+                    />
+                </svg>
+            </span>
+            <span class="rrssb-text">pinterest</span>
+        </a>
+    </li>
+
+</ul>                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <div class="widgets-list hidden-sm hidden-xs">
+    <form method="GET" action="https://adminlte.io/blog/search" accept-charset="UTF-8">
+    <div class="form-group with-icon">
+        <i class="fa fa-search"></i>
+        <input type="text" name="term" class="form-control" placeholder="Search" value=""/>
+    </div>
+    </form>
+
+    <div class="margin-b15">
+        <div class="premium-theme-ad"></div>
+        <div class="text-muted text-center text-sm" style="margin-top: 5px;">SPONSOR</div>
+    </div>
+
+    
+    <div class="widget widget-primary">
+        <div class="widget-heading">
+            <h4>Trending
+                <div class="pull-right"><i class="fa fa-signal"></i></div>
+            </h4>
+        </div>
+        <!-- /.widget-heading -->
+        <div class="widget-body">
+                            <ul class="widget-list">
+                                            <li>
+                            <div class="article-item-text">
+                                <a href="10-Free-Responsive-Bootstrap-Templates-For-2016.html"><span class="article-item-title">10 Free Responsive Bootstrap Templates For 2019</span></a>
+                            </div>
+                        </li>
+                                            <li>
+                            <div class="article-item-text">
+                                <a href="integrate-adminlte-with-laravel.html"><span class="article-item-title">Integrate AdminLTE with Laravel 5</span></a>
+                            </div>
+                        </li>
+                                            <li>
+                            <div class="article-item-text">
+                                <a href="bootstrap-admin-panels.html"><span class="article-item-title">20 Bootstrap Admin Panel Templates 2019</span></a>
+                            </div>
+                        </li>
+                                            <li>
+                            <div class="article-item-text">
+                                <a href="free-admin-panels.html"><span class="article-item-title">20 Free Bootstrap Admin Panel Templates 2019</span></a>
+                            </div>
+                        </li>
+                                            <li>
+                            <div class="article-item-text">
+                                <a href="react-bootstrap-templates.html"><span class="article-item-title">20 React Bootstrap Templates 2019</span></a>
+                            </div>
+                        </li>
+                                    </ul>
+                    </div>
+        <!-- /.widget-body -->
+    </div>
+
+    
+            <div class="widget">
+            <div class="widget-heading">
+                <h4>Categories
+                    <div class="pull-right"><i class="fa fa-bookmark"></i></div>
+                </h4>
+            </div>
+            <!-- /.widget-heading -->
+            <div class="widget-body">
+
+                <ul class="widget-list">
+                    <li><a href="../blog.html">Any Category</a></li>
+                                            <li><a href="category/General.html">General</a></li>
+                                            <li><a href="category/Freebies.html">Freebies</a></li>
+                                    </ul>
+            </div>
+            <!-- /.widget-body -->
+        </div>
+    </div>
+                </div>
+            </div><!-- ./row -->
+        </div><!-- ./container -->
+    </div><!-- ./section -->
+    <br>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9 item">
+                Copyright &copy; 2014-2019 <b><a href="../index.html" style="color: #fff">Almsaeed
+                        Studio</a></b>.
+                All rights reserved.
+                <b><a href="../privacy.html" style="color: #fff">Privacy Policy</a></b>
+            </div>
+            <div class="col-sm-3 text-center">
+                <a href="https://twitter.com/AlmsaeedStudio" class="btn btn-twitter btn-social"
+                   data-toggle="tooltip" data-placement="top" title="Twitter Account"><i
+                            class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/almsaeedstudio" class="btn btn-facebook btn-social"
+                   data-toggle="tooltip" data-placement="top" title="Facebook Page"><i
+                            class="fa fa-facebook"></i></a>
+                <a href="https://github.com/almasaeed2010/" class="btn btn-github btn-social"
+                   data-toggle="tooltip"
+                   data-placement="top" title="Github Repositories"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- styles -->
+<!-- Font-Awesome -->
+<link href="../../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous">
+<!-- Scripts -->
+<script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="../js/app.js"></script>
+    <script>
+        $(window).on('load', function () {
+            $('body').addClass('articles-page');
+        });
+    </script>
+    <script src="../js/run_prettify.js"></script>
+    <script src="../bower_components/rrssb/js/rrssb.min.js"></script>
+</body>
+
+<!-- Mirrored from adminlte.io/blog/integrate-adminlte-with-laravel by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Jun 2019 16:48:11 GMT -->
+</html>

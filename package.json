@@ -1,0 +1,28 @@
+{
+  "name": "clientinfo",
+  "version": "1.0.0",
+  "description": "Tiny library to gather clientside infomation",
+  "main": "client.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AKASHCHAURASIA/Clientinfo.git"
+  },
+  "keywords": [
+    "clientinfo",
+    "javascript",
+    "webrtc",
+    "geolocation",
+    "ip",
+    "leaks",
+    "browser-navigator"
+  ],
+  "author": "“Akash <“akashchaurasia9336@gmail.com”>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AKASHCHAURASIA/Clientinfo/issues"
+  },
+  "homepage": "https://github.com/AKASHCHAURASIA/Clientinfo#readme"
+}

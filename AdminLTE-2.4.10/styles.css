@@ -1,0 +1,286 @@
+  .content-header
+  {
+	  height: 100px;
+  }
+
+  .small-box1 
+  {
+	width: 235px;
+	height: 300px;
+	/* border: 15px solid green; */
+	padding: 20px;
+	margin: 30px;
+  }
+  .small-box2
+  {
+	width: 235px;
+	/* border: 15px solid green; */
+	height: 300px;
+	padding: 20px;
+	margin: 30px;
+  }
+  .small-box3 
+  {
+	width: 235px;
+	/* border: 15px solid green; */
+	height: 300px;
+	padding: 20px;
+	margin: 30px;
+  }
+  .small-box4
+  {
+	width: 235px;
+	/* border: 15px solid green; */
+	height: 300px;
+	padding: 20px;
+	margin: 30px;
+  }
+  .inner
+  {
+	  padding: 10px;
+  }
+  /* .icon.ion */
+  /* { */
+	  /* width: 50px ; */
+	  /* height: 50px ; */
+  /* } */
+  .btn1
+  {
+	  background-color: #d0d3d8;
+	  /* border: none; */
+	  border-style: solid;
+	  border-width: 4px 4px 4px 4px;
+	  border-color: #dd4b39;
+      color: white;
+      padding: 12px 30px;
+      cursor: pointer;
+      font-size: 20px;  
+  }
+  .btn2
+  {
+	  background-color: #d0d3d8;
+	   border-style: solid;
+	  border-width: 4px 4px 4px 4px;
+	  border-color: #dd4b39;
+	  /* border: none; */
+      color: white;
+      padding: 12px 30px;
+      cursor: pointer;
+      font-size: 20px;  
+  }
+  .btn3
+  {
+	  background-color: #d0d3d8;
+	   border-style: solid;
+	  border-width: 4px 4px 4px 4px;
+	  border-color: #dd4b39;
+	  /* border: none; */
+      color: white;
+      padding: 12px 30px;
+      cursor: pointer;
+      font-size: 20px;  
+  }
+  .btn4
+  {
+	  background-color: #d0d3d8;
+	   border-style: solid;
+	  border-width: 4px 4px 4px 4px;
+	  border-color: #dd4b39;
+	  /* border: none; */
+      color: white;
+      padding: 12px 30px;
+      cursor: pointer;
+      font-size: 20px;  
+  }
+  .btn1:hover {
+  background-color: RoyalBlue;
+}
+.btn2:hover {
+  background-color: RoyalBlue;
+}
+.btn3:hover {
+  background-color: RoyalBlue;
+}
+.btn4:hover {
+  background-color: RoyalBlue;
+}
+.btn11
+  {
+	  background-color: #39cccc;
+	  /* border: none; */
+	  border-style: solid;
+	  border-width: 4px 4px 4px 4px;
+	  border-color: #f39c12;
+      color: white;
+      padding: 12px 30px;
+      cursor: pointer;
+      font-size: 20px;  
+  }
+  .btn22
+  {
+	  background-color: #39cccc;
+	   border-style: solid;
+	  border-width: 4px 4px 4px 4px;
+	  border-color: #f39c12;
+	  /* border: none; */
+      color: white;
+      padding: 12px 30px;
+      cursor: pointer;
+      font-size: 20px;  
+  }
+  .btn33
+  {
+	  background-color: #39cccc;
+	   border-style: solid;
+	  border-width: 4px 4px 4px 4px;
+	  border-color: #f39c12;
+	  /* border: none; */
+      color: white;
+      padding: 12px 30px;
+      cursor: pointer;
+      font-size: 20px;  
+  }
+  .btn44
+  {
+	  background-color: #39cccc;
+	   border-style: solid;
+	  border-width: 4px 4px 4px 4px;
+	  border-color: #f39c12;
+	  /* border: none; */
+      color: white;
+      padding: 12px 30px;
+      cursor: pointer;
+      font-size: 20px;  
+  }
+  .btn11:hover {
+  background-color: RoyalBlue;
+}
+.btn22:hover {
+  background-color: RoyalBlue;
+}
+.btn33:hover {
+  background-color: RoyalBlue;
+}
+.btn44:hover {
+  background-color: RoyalBlue;
+}
+.btn111
+  {
+	  background-color: #dd4b39;
+	  /* border: none; */
+	  border-style: solid;
+	  border-width: 4px 4px 4px 4px;
+	  border-color: #d0d3d8;
+      color: white;
+      padding: 12px 30px;
+      cursor: pointer;
+      font-size: 20px;  
+  }
+  .btn222
+  {
+	  background-color: #dd4b39;
+	   border-style: solid;
+	  border-width: 4px 4px 4px 4px;
+	  border-color: #d0d3d8;
+	  /* border: none; */
+      color: white;
+      padding: 12px 30px;
+      cursor: pointer;
+      font-size: 20px;  
+  }
+  .btn333
+  {
+	  background-color: #dd4b39;
+	   border-style: solid;
+	  border-width: 4px 4px 4px 4px;
+	  border-color: #d0d3d8;
+	  /* border: none; */
+      color: white;
+      padding: 12px 30px;
+      cursor: pointer;
+      font-size: 20px;  
+  }
+  .btn444
+  {
+	  background-color: #dd4b39;
+	   border-style: solid;
+	  border-width: 4px 4px 4px 4px;
+	  border-color: #d0d3d8;
+	  /* border: none; */
+      color: white;
+      padding: 12px 30px;
+      cursor: pointer;
+      font-size: 20px;  
+  }
+  .btn111:hover {
+  background-color: RoyalBlue;
+}
+.btn222:hover {
+  background-color: RoyalBlue;
+}
+.btn333:hover {
+  background-color: RoyalBlue;
+}
+.btn444:hover {
+  background-color: RoyalBlue;
+}
+.btn1111
+  {
+	  background-color: #f39c12;
+	  /* border: none; */
+	  border-style: solid;
+	  border-width: 4px 4px 4px 4px;
+	  border-color: #39cccc;
+      color: white;
+      padding: 12px 30px;
+      cursor: pointer;
+      font-size: 20px;  
+  }
+  .btn2222
+  {
+	  background-color: #f39c12;
+	   border-style: solid;
+	  border-width: 4px 4px 4px 4px;
+	  border-color: #39cccc;
+	  /* border: none; */
+      color: white;
+      padding: 12px 30px;
+      cursor: pointer;
+      font-size: 20px;  
+  }
+  .btn3333
+  {
+	  background-color: #f39c12;
+	   border-style: solid;
+	  border-width: 4px 4px 4px 4px;
+	  border-color: #39cccc;
+	  /* border: none; */
+      color: white;
+      padding: 12px 30px;
+      cursor: pointer;
+      font-size: 20px;  
+  }
+  .btn4444
+  {
+	  background-color: #f39c12;
+	   border-style: solid;
+	  border-width: 4px 4px 4px 4px;
+	  border-color: #39cccc;
+	  /* border: none; */
+      color: white;
+      padding: 12px 30px;
+      cursor: pointer;
+      font-size: 20px;  
+  }
+  .btn1111:hover {
+  background-color: RoyalBlue;
+}
+.btn2222:hover {
+  background-color: RoyalBlue;
+}
+.btn3333:hover {
+  background-color: RoyalBlue;
+}
+.btn4444:hover {
+  background-color: RoyalBlue;
+}

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from adminlte.io/docs/2.4/js-tree by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Jun 2019 16:46:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:admins" content="100001590293635"/>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../../img/favicon7839.png?v=1.2" type="image/x-icon">
+    <link rel="shortcut icon" href="../../img/favicon7839.png?v=1.2" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../img/favicon7839.png?v=1.2">
+
+    <!-- social network metas -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="AdminLTE - Tree Plugin"/>
+    <meta property="og:url" content="js-tree.html"/>
+    <meta property="image" content="../../img/AdminLTE2.1.png"/>
+    <meta property="og:image" content="../../img/AdminLTE2.1.png"/>
+    <meta property="site_name" content="Almsaeed Studio"/>
+    <meta property="description"
+          content="Best open source admin dashboard &amp; control panel theme. Built on top of Bootstrap 3, AdminLTE provides a range of responsive, reusabale, and commonly used components."/>
+
+    <title>AdminLTE - Tree Plugin</title>
+
+    <link rel="stylesheet" href="../../themes/AdminLTE/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../themes/AdminLTE/dist/css/AdminLTE.min017e.css?version=2.4">
+    <link rel="stylesheet" href="../../themes/AdminLTE/dist/css/skins/_all-skins.min017e.css?version=2.4">
+    <link rel="stylesheet" href="../../css/docs017e.css?version=2.4">
+
+<!-- Fonts -->
+    <link rel="stylesheet"
+          href="../../../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments);
+                }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src   = g;
+            m.parentNode.insertBefore(a, m);
+        })(window, document, 'script', '../../../www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-46680343-1', 'auto');
+        ga('send', 'pageview');
+        ga('send', 'event', {
+            eventCategory: 'Documentation',
+            eventAction  : 'Visit'
+        });
+    </script>
+</head>
+<body class="hold-transition skin-black-light sidebar-mini">
+<div class="wrapper">
+
+<!-- Main Header -->
+<header class="main-header">
+
+    <!-- Logo -->
+    <a href="../../index.html" class="logo">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini"><b>A</b>LT</span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg"><b>Admin</b>LTE Docs</span>
+    </a>
+
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top" role="navigation">
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+            <span class="sr-only">Toggle navigation</span>
+        </a>
+        <div class="btn-group">
+            <a href="#" class="btn btn-primary navbar-btn dropdown-toggle" data-toggle="dropdown">
+                2.4 <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-xs">
+                                    <li><a href="js-tree.html">2.4</a></li>
+                                <li><a href="../../themes/AdminLTE/documentation/index.html"><= 2.3</a></li>
+            </ul>
+        </div>
+        <!-- Navbar Right Menu -->
+        <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+                <li><a href="../../index.html">AdminLTE.IO</a></li>
+                <li><a href="../../premium.html">Premium Templates</a></li>
+            </ul>
+        </div>
+    </nav>
+</header><!-- Left side column. contains the logo and sidebar -->
+<aside class="main-sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+        <!-- search form -->
+        <form method="get" class="sidebar-form" id="sidebar-form">
+            <div class="input-group">
+                <input type="text" name="q" class="form-control" placeholder="Search..." id="search-input">
+                <span class="input-group-btn">
+                    <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+        </form>
+        <!-- /.search form -->
+
+        <!-- Sidebar Menu -->
+        <ul class="sidebar-menu" data-widget="tree">
+            <li class="header">TABLE OF CONTENTS</li>
+            <li>
+                <a href="installation.html"><i class="fa fa-microchip"></i> <span>Installation</span></a>
+            </li>
+            <li>
+                <a href="dependencies.html"><i class="fa fa-handshake-o"></i>
+                    <span>Dependencies & plugins</span></a></li>
+            <li>
+                <a href="layout.html"><i class="fa fa-files-o"></i> <span>Layout</span></a></li>
+            <li class="treeview ">
+                <a href="#"><i class="fa fa-th"></i> <span>Components</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li>
+                        <a href="main-header.html"><i class="fa fa-circle-o"></i> Main Header</a>
+                    </li>
+                    <li>
+                        <a href="sidebar.html"><i class="fa fa-circle-o"></i> Sidebar</a>
+                    </li>
+                    <li>
+                        <a href="control-sidebar.html"><i class="fa fa-circle-o"></i> Control Sidebar</a>
+                    </li>
+                    <li>
+                        <a href="boxes.html"><i class="fa fa-circle-o"></i> Box</a>
+                    </li>
+                    <li>
+                        <a href="info-box.html"><i class="fa fa-circle-o"></i> Info Box</a>
+                    </li>
+                    <li>
+                        <a href="direct-chat.html"><i class="fa fa-circle-o"></i> Direct Chat</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="treeview active">
+                <a href="#"><i class="fa fa-code"></i> <span>JavaScript</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li>
+                        <a href="js-layout.html"><i class="fa fa-circle-o"></i> Layout</a>
+                    </li>
+                    <li>
+                        <a href="js-push-menu.html"><i class="fa fa-circle-o"></i> Push Menu</a>
+                    </li>
+                    <li class="active">
+                        <a href="js-tree.html"><i class="fa fa-circle-o"></i> Tree</a>
+                    </li>
+                    <li>
+                        <a href="js-control-sidebar.html"><i class="fa fa-circle-o"></i> Control Sidebar</a>
+                    </li>
+                    <li>
+                        <a href="js-box-widget.html"><i class="fa fa-circle-o"></i> Box Widget</a>
+                    </li>
+                    <li>
+                        <a href="js-box-refresh.html"><i class="fa fa-circle-o"></i> Box Refresh</a>
+                    </li>
+                    <li>
+                        <a href="js-todo-list.html"><i class="fa fa-circle-o"></i> Todo List</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="browser-support.html"><i class="fa fa-chrome"></i><span>Browser Support</span></a>
+            </li>
+            <li>
+                <a href="upgrade-guide.html"><i class="fa fa-hand-o-up"></i><span>Upgrade Guide</span></a>
+            </li>
+            <li>
+                <a href="implementations.html"><i class="fa fa-bookmark-o"></i><span>Implementations</span></a>
+            </li>
+            <li>
+                <a href="faq.html"><i class="fa fa-question-circle-o"></i> <span>FAQ</span></a>
+            </li>
+            <li>
+                <a href="license.html"><i class="fa fa-file-text-o"></i> <span>License</span></a>
+            </li>
+        </ul>
+        <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+</aside>
+
+
+<!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <article>
+            <!-- Content Header (Page header) -->
+            <header class="content-header container-fluid">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h1 class="content-max-width">Tree Plugin</h1>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main content -->
+            <div class="content container-fluid">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <section class="content-max-width">
+                                <section id="js-tree">
+        <p>
+            The tree plugin converts a nested list into a tree view where sub menus can be expanded.
+        </p>
+
+        <h3>Usage</h3>
+        This plugin can be activated using the data-api or jQuery.
+
+        <h4>Data Api</h4>
+        <p>
+            Add <code>data-widget="tree"</code> to any <code>ul</code> or <code>ol</code> element to activate the plugin.
+            All options can be passed using the data api. Example: <code>data-animation-speed="1000"</code>.
+        </p>
+
+        <div class="example">
+            <script async src="http://jsfiddle.net/almasaeed2010/6y9n4kx8/embed/html/dark/"></script>
+        </div>
+
+        <h4>jQuery</h4>
+        <div class="example">
+            <script async src="http://jsfiddle.net/almasaeed2010/5eL95awa/embed/js/dark/"></script>
+        </div>
+
+        <h3>Options</h3>
+        <table class="table table-striped table-bordered">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Default</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>animationSpeed</td>
+                <td>Number</td>
+                <td>500</td>
+                <td>Speed of slide down/up animation in milliseconds.</td>
+            </tr>
+            <tr>
+                <td>accordion</td>
+                <td>Boolean</td>
+                <td>TRUE</td>
+                <td>Whether to collapse the open menu when expanding another.</td>
+            </tr>
+            <tr>
+                <td>followLink</td>
+                <td>Boolean</td>
+                <td>FALSE</td>
+                <td>Whether to follow the link in the <code>a</code> element instead of expanding the sub menu.</td>
+            </tr>
+            <tr>
+                <td>trigger</td>
+                <td>String</td>
+                <td><code>.treeview a</code></td>
+                <td>
+                    Selector of the element that should respond to the click and result in expanding or collapsing it
+                    sibling sub menu.
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h3>Events</h3>
+        <table class="table table-striped table-bordered">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>expanded.tree</td>
+                <td>Triggered after a sub menu expands.</td>
+            </tr>
+            <tr>
+                <td>collapsed.tree</td>
+                <td>Triggered after a sub menu collapses.</td>
+            </tr>
+            </tbody>
+        </table>
+        <p>
+            Example: <code>$('ul').on('expanded.tree', handleExpandedEvent)</code>
+        </p>
+    </section>
+                        </section>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="box box-solid limit-p-width">
+    <div class="box-body affiliate">
+        <div class="heading">
+            PREMIUM TEMPLATE
+        </div>
+        <a href="https://dashboardpack.com/theme-details/kero-jquery-html-dashboard-pro&amp;utm_source=adminlte&amp;utm_medium=frontpage">
+            <img src="../../uploads/images/frontpage/kero-html-pro-screenshot.jpg"
+                 alt="Kero"
+                 class="img-responsive">
+        </a>
+
+        <div class="caption">
+            <h3>Kero &HorizontalLine; $49</h3>
+
+            <p> Bootstrap 4 Admin Dashboard Template</p>
+
+            <p>
+                <a href="https://dashboardpack.com/live-demo-preview/?livedemo=2386&amp;utm_source=adminlte&amp;utm_medium=frontpage"
+                   class="btn btn-primary" role="button">
+                    Preview
+                </a>
+                <a href="https://dashboardpack.com/theme-details/kero-jquery-html-dashboard-pro&amp;utm_source=adminlte&amp;utm_medium=frontpage"
+                   class="btn btn-success" role="button">
+                    Buy Now
+                </a>
+            </p>
+            <p><i class="fa fa-shopping-cart margin-r5"></i> 500+ purchases</p>
+        </div>
+
+    </div>
+</div>                    </div>
+                </div>
+            </div>
+            <!-- /.content -->
+        </article>
+    </div>
+    <!-- /.content-wrapper -->
+
+    <!-- Main Footer -->
+<footer class="main-footer">
+    <!-- To the right -->
+    <div class="pull-right hidden-xs">
+        AdminLTE Documentation
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2017 <a href="../../index.html">AdminLTE.IO</a>.</strong> All rights reserved.
+</footer></div>
+<!-- ./wrapper -->
+
+<!-- Scripts -->
+<script src="../../themes/AdminLTE/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../../themes/AdminLTE/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../../themes/AdminLTE/dist/js/adminlte.min.js"></script>
+<script src="../../js/docs.js"></script>
+    <script>
+        $(function () {
+            $('#sidebar-form').on('submit', function (e) {
+                e.preventDefault();
+            });
+
+            $('.sidebar-menu li.active').data('lte.pushmenu.active', true);
+
+            $('#search-input').on('keyup', function () {
+                var term = $('#search-input').val().trim();
+
+                if (term.length === 0) {
+                    $('.sidebar-menu li').each(function () {
+                        $(this).show(0);
+                        $(this).removeClass('active');
+                        if ($(this).data('lte.pushmenu.active')) {
+                            $(this).addClass('active');
+                        }
+                    });
+                    return;
+                }
+
+                $('.sidebar-menu li').each(function () {
+                    if ($(this).text().toLowerCase().indexOf(term.toLowerCase()) === -1) {
+                        $(this).hide(0);
+                        $(this).removeClass('pushmenu-search-found', false);
+
+                        if ($(this).is('.treeview')) {
+                            $(this).removeClass('active');
+                        }
+                    } else {
+                        $(this).show(0);
+                        $(this).addClass('pushmenu-search-found');
+
+                        if ($(this).is('.treeview')) {
+                            $(this).addClass('active');
+                        }
+
+                        var parent = $(this).parents('li').first();
+                        if (parent.is('.treeview')) {
+                            parent.show(0);
+                        }
+                    }
+
+                    if ($(this).is('.header')) {
+                        $(this).show();
+                    }
+                });
+
+                $('.sidebar-menu li.pushmenu-search-found.treeview').each(function () {
+                    $(this).find('.pushmenu-search-found').show(0);
+                });
+            });
+        });
+    </script>
+
+</body>
+
+<!-- Mirrored from adminlte.io/docs/2.4/js-tree by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Jun 2019 16:46:20 GMT -->
+</html>
