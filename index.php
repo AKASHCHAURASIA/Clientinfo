@@ -26,4 +26,8 @@ ipLookUp();
 
 
 </head>
+  <body id="mouse">
+    <div id="main">
+    </div>
+  </body>
 </html>
