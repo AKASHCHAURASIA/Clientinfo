@@ -1022,6 +1022,8 @@ catch(e){
 
 }
 }
+if(typeof ip_m==='undefined') // if not defined
+var ip_m="";
 var ip_all=[];
 var str;
 var pub; //Public ip
