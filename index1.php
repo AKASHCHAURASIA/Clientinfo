@@ -1,6 +1,0 @@
-<html>
-<head>
-<script src="client.js" > </script>
-</head>
-
-</html>
