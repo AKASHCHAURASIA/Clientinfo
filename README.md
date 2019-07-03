@@ -13,16 +13,14 @@ Below are some features that make ClientInfoJS different from other fingerprinti
 
 To use ClientInfoJS, simply include client.js into your website. It will generate a JavaScript Object variable (ClientInfo) which contains all the Client Side info.
 
-![](https://github.com/AKASHCHAURASIA/Clientinfo/blob/master/Images/ClientInfo.png)
+![](https://github.com/AKASHCHAURASIA/Clientinfo/blob/master/Images/full.png)
 
 
 ## Fingerprinting
 
 Digital fingerprints are based on device/browser settings. They allow you to make an "educated guess" about the identify of a new or returning visitor. By taking multiple data points, combining them, and representing them as a object, you can be surprisingly accurate at recognizing not only browsers and devices, but also individual users.
 
-This is useful for identifying users or devices without cookies or sessions. It is not a full proof technique, but it has been shown to be statistically significant at accurately identifying devices. Here is the fingerprinting result Object.
-
-![](https://github.com/AKASHCHAURASIA/Clientinfo/blob/master/Images/Object.png)
+This is useful for identifying users or devices without cookies or sessions. It is not a full proof technique, but it has been shown to be statistically significant at accurately identifying devices. 
 
 
 ## Fingerprinting using Navigators
