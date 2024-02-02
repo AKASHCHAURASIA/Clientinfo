@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "bootstrap": "^3.4.0",
-    "bootstrap-colorpicker": "^2.5.3",
+    "bootstrap-colorpicker": "^3.4.0",
     "bootstrap-datepicker": "^1.8.0",
     "bootstrap-daterangepicker": "^2.1.25",
     "bootstrap-slider": "^9.8.0",
@@ -50,7 +50,7 @@
     "jquery-knob": "^1.2.11",
     "jquery-sparkline": "^2.4.0",
     "jquery-ui": "^1.12.1",
-    "jvectormap": "^1.2.2",
+    "jvectormap": "^2.0.4",
     "moment": "^2.24.0",
     "morris.js": "^0.5.0",
     "pace": "0.0.4",
